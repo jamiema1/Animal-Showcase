@@ -1,26 +1,23 @@
 function showText(id) {
-    const box = document.getElementById("text" + id)
-    box.style.opacity = 1;
+    const textBox = document.getElementById("text" + id)
+    const text = document.getElementsByClassName("text")
+    for (b of text) {
+        b.style.transitionDelay = "1s"
+        b.style.transitionDuration = "1s"
+        b.style.opacity = "100%"
+    }
+    textBox.style.opacity = "100%"
+    textBox.style.width = "300px"
 }
 
 function hideText(id) {
-    const box = document.getElementById("text" + id)
-    box.style.opacity = 0;
+    const textBox = document.getElementById("text" + id)
+    const text = document.getElementsByClassName("text")
+    for (b of text) {
+        b.style.transitionDelay = "0s"
+        b.style.transitionDuration = "0s"
+        b.style.opacity = "0%"
+    }
+    textBox.style.opacity = "0%"
+    textBox.style.width = "0px"
 }
-
-// function showText() {
-//     const boxes = document.getElementsByClassName("textbox")
-    
-//     for (b of boxes) {
-//         b.style.opacity = 1;
-//     }
-// }
-
-// function hideText() {
-//     const boxes = document.getElementsByClassName("textbox");
-    
-//     for (b of boxes) {
-        
-//         b.style.opacity = 0;
-//     }
-// }

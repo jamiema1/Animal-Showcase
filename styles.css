@@ -25,11 +25,11 @@ html {
 }
 
 .textbox {
-    margin: -80px 0px 0px -150px;
+    margin: -80px 0px 0px 150px;
     height: 160px;
-    width: 300px;
+    width: 0px;
     opacity: 0%;
-    transition-property: translate opacity;
+    transition-property: translate width opacity;
     transition-duration: 1.5s;
 }
 
@@ -37,6 +37,12 @@ html {
     font-size: 23px;
 }
 
+.text {
+    opacity: 0%;
+    transition-property: opacity;
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
 
 
 .box img {
@@ -86,25 +92,25 @@ html {
 }
 
 #text1 {
-    transform: translateX(500px);
+    transform: translateX(200px);
 }
 
 #text2 {
-    transform: translate(400px, -173px);
+    transform: translate(100px, -173px);
 }
 
 #text3 {
-    transform: translate(-400px, -173px);
+    transform: translate(-700px, -173px);
 }
 
 #text4 {
-    transform: translateX(-500px);
+    transform: translateX(-800px);
 }
 
 #text5 {
-    transform: translate(-400px, 173px);
+    transform: translate(-700px, 173px);
 }
 
 #text6 {
-    transform: translate(400px, 173px);
+    transform: translate(100px, 173px);
 }
